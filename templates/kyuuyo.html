@@ -7,7 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="{{url_for('ooo')}}">給与の計算</a>
-    <a href="{{url_for('en')}}">円の計算</a>
+    時給：
+    <form action="{{url_for('kyuuyo_calc')}}" method="get">
+        <input type="text" name="jikyuu"><br>
+        労働時間：
+        <input type="text" name="zikan"><br>
+
+        <input type="submit" value="計算">
+    </form>
+
 </body>
 </html>
